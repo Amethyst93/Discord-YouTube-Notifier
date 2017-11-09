@@ -18,7 +18,7 @@ A small, easy to use Discord BOT that displays live video updates of a YouTube c
 - [Discord.py](https://github.com/Rapptz/discord.py)
 - [PyYaml](https://github.com/yaml/pyyaml)
 - Google API Key (with YouTube Data API v3 activated), Tutorial in "**Preparation**"
-- Discord BOT, Tutorial in "**Preparation**"
+- Registered Discord bot, Tutorial in "**Preparation**"
 
 ### Preparation
 - **1.)** Install [Python 3.5](https://www.python.org/downloads/release/python-354/), and make sure it is included to your PATH.

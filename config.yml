@@ -1,0 +1,18 @@
+config:
+    connection:
+        Google API key: # YouTube v3 API Key
+        Discord bot token: # Discord bot token
+    main:
+        Ping Every x Minutes: 15 # 5-15 minutes should be ok, anything lower not recommended, because the API traffic will be used up very quickly otherwise.
+    Discord Channel:
+        0:
+            channelID: # Discord channel ID
+        1:
+            channelID: # Discord channel ID
+    YouTubers:
+        0:
+            name: # Name that will be displayed in discord, mentions can be used with <@DiscordUserID>
+            channelID: # YouTube Channel ID
+        1:
+            name: # Name that will be displayed in discord, mentions can be used with <@DiscordUserID>
+            channelID: # YouTube Channel ID

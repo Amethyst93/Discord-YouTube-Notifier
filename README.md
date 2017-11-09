@@ -1,6 +1,6 @@
-# THIS IS A FORK FROM [Discord-YouTube-Feed-BOT](https://github.com/anti0/Discord-YouTube-Feed-BOT) by [anti0](https://github.com/anti0)!
+# THIS IS A MODIFIED FORK FROM [Discord-YouTube-Feed-BOT](https://github.com/anti0/Discord-YouTube-Feed-BOT) by [anti0](https://github.com/anti0)!
 
-# Discord BOT YouTube Feed
+# Discord YouTube Notifier
 
 A small, easy to use Discord BOT that displays live video updates of a YouTube channel on Discord.
 

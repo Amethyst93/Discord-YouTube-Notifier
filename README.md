@@ -7,9 +7,9 @@ A selfhosted YouTube feed bot for Discord. Basically, this bot keeps you and you
 ### Features
 - Multi YouTuber support (you can add as many as you want)
 - Multi Discord channel support, so you can push the update feed in more than one server or channel at a time!
+- Livestream support
+- Custom messages for user uploads and livestreams!
 - Easy yaml configuration file (config.yml)
-- Checks if a user has uploaded a new video and automatically pushes a message on discord if they did.
-- Checks if a user is livestreaming and automatically pushes a message on discord if they are.
 
 ### Requirements
 - [Python 3.5](https://www.python.org/downloads/release/python-354/)

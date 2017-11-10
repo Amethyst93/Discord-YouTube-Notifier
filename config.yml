@@ -9,6 +9,9 @@ config:
             channelID: # Discord channel ID
         1:
             channelID: # Discord channel ID
+    Message:
+        New video: ":film_frames: **{0} HAS UPLOADED A NEW VIDEO!** :film_frames:" # Message that appears when a YouTuber has uploaded a new video, user placeholder: {0}
+        Livestream: ":red_circle: **{0} IS LIVESTREAMING NOW!** :red_circle:" # Message that appears when a YouTuber is livestreaming, user placeholder: {0}
     YouTubers:
         0:
             name: # Name that will be displayed in discord, mentions can be used with <@DiscordUserID>

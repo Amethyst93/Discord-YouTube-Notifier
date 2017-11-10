@@ -41,17 +41,17 @@ async def update():
                 print('Checking for new videos from {}'.format(threads[item][0]))
                 if processes[item].isNewVideo():
                     print('{} HAS UPLOADED A NEW VIDEO! PUSHING UPDATE ON DISCORD.'.format(threads[item][0]))
+                    newvideo = config.getMessage()[0].format(threads[item][0]) + '\n{}'.format(processes[item].getVideoLink(processes[item].videosData[0][1]))
                     for x in range (0, config.getDiscordChannelNr()):
-                        newmessage = ':film_frames: **{} HAS UPLOADED A NEW VIDEO!** :film_frames:\n{}'.format(threads[item][0], processes[item].getVideoLink(processes[item].videosData[0][1]))
-                        await client.send_message(client.get_channel(str(config.getDiscordChannelList()[x]['channelID'])), newmessage)
+                        await client.send_message(client.get_channel(str(config.getDiscordChannelList()[x]['channelID'])), newvideo)
 
                 if processes[item].isUserLive():
                     if not processes[item].liveId == threads[item][3]:
                         print('{} IS LIVESTREAMING NOW! PUSHING UPDATE ON DISCORD.'.format(threads[item][0]))
-                        newmessage = ':red_circle: **{} IS LIVESTREAMING NOW!** :red_circle:\n{}'.format(threads[item][0], processes[item].getVideoLink(processes[item].getUserLiveData()))
+                        livestream = config.getMessage()[1].format(threads[item][0]) + '\n{}'.format(processes[item].getVideoLink(processes[item].getUserLiveData()))
                         threads[item][3] = processes[item].liveId
                         for x in range (0, config.getDiscordChannelNr()):
-                            await client.send_message(client.get_channel(str(config.getDiscordChannelList()[x]['channelID'])), newmessage)
+                            await client.send_message(client.get_channel(str(config.getDiscordChannelList()[x]['channelID'])), livestream)
                 item += 1
         except:
             pass

@@ -38,7 +38,7 @@ A selfhosted YouTube feed bot for Discord. Basically, this bot keeps you and you
 
 Configuration is done by editing the config.yaml file. I would suggest using an editor like [Notepad++](https://notepad-plus-plus.org/) to edit the file.
 
-- In the first section in "connection" you will have to enter your YouTube v3 API Key that you have obtained earlier in Step #2 of **Preparation**. Just copy and paste it into the field, so that this:
+- **In the first section in "connection" you will have to enter your YouTube v3 API Key that you have obtained earlier in Step #2 of Preparation.** Just copy and paste it into the field, so that this:
 ```
         Google API key: # YouTube v3 API Key
 ```
@@ -49,7 +49,7 @@ Will look like something like this:
         Google API key: 4P9nlidzQdMCxCzDymrUDpNwapMQ5jqC # YouTube v3 API Key
 ```
 
-- Then you need to provide your discord bot token you have obtained in Step #3 in **Preparation**. Again, just copy and paste it, so that this:
+- **Then you need to provide your discord bot token you have obtained in Step #3 in Preparation.** Again, just copy and paste it, so that this:
 ```
         Discord bot token: # Discord bot token
 ```
@@ -59,12 +59,12 @@ Becomes something like this:
         Discord bot token: 7PGNyakySQu8ZH0T3Y7EDldSnHKlOGbL.SFTM7Zq38J-aDR2pflmUS # Discord bot token
 ```
 
-- You can specify the time period in minutes the bot will check the YouTube channels for new content. I do not recommend going lower than 5 minutes though, because your daily use of queries is limited and can be used up very quickly that way. Just change the "15" to whatever you desire. 
+- **You can specify the time period in minutes the bot will check the YouTube channels for new content. I do not recommend going lower than 5 minutes though, because your daily use of queries is limited and can be used up very quickly that way. Just change the "15" to whatever you desire.**
 ```
         Ping Every x Minutes: 15 # 5-15 minutes should be ok, anything lower not recommended, because the API traffic will be used up very quickly otherwise.
 ```
 
-- I have included 2 Discord channelID placeholders as an example in the config:
+- **I have included 2 Discord channelID placeholders as an example in the config:**
 ```
         0:
             channelID: # Discord channel ID
@@ -96,7 +96,7 @@ Then you need to provide your discord channel ID(s) you have obtained in Step #5
         0:
             channelID: 3C2DCFC6DCA9761B # Discord channel ID
 ```
-- Now you can specify the YouTubers that you want to push on your discord. Again, I have included placeholders for 2 channels as an example:
+- **Now you can specify the YouTubers that you want to push on your discord. Again, I have included placeholders for 2 channels as an example**:
 ```
         0:
             name: # Name that will be displayed in discord, mentions can be used with <@DiscordUserID>
@@ -159,7 +159,7 @@ Useful if you are a YouTuber yourself and want to automaticaly promote yourself:
             channelID: UCXuqSBlHAE6Xw-yeJA0Tunw # YouTube Channel ID
 ```
 
-- You can have custom messages for when a user uploads something or is currently livestreaming:
+- **You can have custom messages for when a user uploads something or is currently livestreaming:**
 ```
         New video: ":film_frames: **{0} HAS UPLOADED A NEW VIDEO!** :film_frames:" # Message that appears when a YouTuber has uploaded a new video, user placeholder: {0}
         Livestream: ":red_circle: **{0} IS LIVESTREAMING NOW!** :red_circle:" # Message that appears when a YouTuber is livestreaming, user placeholder: {0}

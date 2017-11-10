@@ -167,7 +167,10 @@ Useful if you are a YouTuber yourself and want to automaticaly promote yourself:
        - Name you specified in the YouTubers configuration
      - @everyone
        - Mention @everyone on Discord
-In my example configuration file, I am using emoji's like :clapper: and :red_circle:. You can use all the emoji's with :EmojiName:. Emoji names can be obtained by clicking on the emoji symbol on the right in the Discord textchat, and a mouseover will reveal the plain text that you need to enter.
+     - <@DiscordUserID>
+       - Mention a specific user on discord, ID can be obtained like described in Step #6 in **Preparation**.
+     - :EmojiName:
+       - In my example configuration file, I am using emoji's like :clapper: and :red_circle:. You can use all the emoji's with :EmojiName:. Emoji names can be obtained by clicking on the emoji symbol on the right in the Discord textchat, and a mouseover will reveal the plain text that you need to enter.
 
 ### Installation
 Make sure you have Python 3.5 installed.

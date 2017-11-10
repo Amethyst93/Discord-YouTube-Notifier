@@ -1,5 +1,3 @@
-# THIS PROJECT IS BASED ON [Discord-YouTube-Feed-BOT](https://github.com/anti0/Discord-YouTube-Feed-BOT) BY [anti0](https://github.com/anti0)!
-
 # Discord YouTube Notifier
 
 A selfhosted YouTube feed bot for Discord. Basically, this bot keeps you and your friends up-to-date with everything that's happening on YouTube. Or, if you are a YouTuber or YouTube livestreamer yourself, and like to forget to promote yourself like I do, this bot takes care of that too. The original project seems to be no longer maintained by the original creator, so I created my own.

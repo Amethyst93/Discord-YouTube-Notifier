@@ -1,4 +1,4 @@
-# THIS IS A MODIFIED FORK FROM [Discord-YouTube-Feed-BOT](https://github.com/anti0/Discord-YouTube-Feed-BOT) BY [anti0](https://github.com/anti0)!
+# THIS PROJECT IS BASED ON [Discord-YouTube-Feed-BOT](https://github.com/anti0/Discord-YouTube-Feed-BOT) BY [anti0](https://github.com/anti0)!
 
 # Discord YouTube Notifier
 

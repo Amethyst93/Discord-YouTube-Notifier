@@ -3,7 +3,7 @@ config:
         Google API key: # YouTube v3 API Key
         Discord bot token: # Discord bot token
     main:
-        Ping Every x Minutes: 5 # 5-15 minutes should be ok, anything lower not recommended, because the API traffic will be used up very quickly otherwise.
+        Ping Every x Minutes: 5 # at least 5 minutes should be ok, anything lower not recommended, because the API traffic will be used up very quickly otherwise.
     Discord Channel:
         0:
             channelID: # Discord channel ID

@@ -57,9 +57,9 @@ Becomes something like this:
         Discord bot token: 7PGNyakySQu8ZH0T3Y7EDldSnHKlOGbL.SFTM7Zq38J-aDR2pflmUS # Discord bot token
 ```
 
-- **You can specify the time period in minutes the bot will check the YouTube channels for new content. I do not recommend going lower than 5 minutes though, because your daily use of queries is limited and can be used up very quickly that way. Just change the "15" to whatever you desire.**
+- **You can specify the time period in minutes the bot will check the YouTube channels for new content. I do not recommend going lower than 5 minutes though, because your daily use of queries is limited and can be used up very quickly that way. Just change the "5" to whatever you desire.**
 ```
-        Ping Every x Minutes: 15 # 5-15 minutes should be ok, anything lower not recommended, because the API traffic will be used up very quickly otherwise.
+        Ping Every x Minutes: 5 # at least 5 minutes should be ok, anything lower not recommended, because the API traffic will be used up very quickly otherwise.
 ```
 
 - **I have included 2 Discord channelID placeholders as an example in the config:**

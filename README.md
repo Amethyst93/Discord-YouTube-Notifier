@@ -96,7 +96,6 @@ Then you need to provide your discord channel ID(s) you have obtained in Step #5
         0:
             channelID: 3C2DCFC6DCA9761B # Discord channel ID
 ```
-
 - Now you can specify the YouTubers that you want to push on your discord. Again, I have included placeholders for 2 channels as an example:
 ```
         0:
@@ -159,6 +158,18 @@ Useful if you are a YouTuber yourself and want to automaticaly promote yourself:
             name: LinusTechTips # Name that will be displayed in discord, mentions can be used with <@DiscordUserID>
             channelID: UCXuqSBlHAE6Xw-yeJA0Tunw # YouTube Channel ID
 ```
+
+- You can have custom messages for when a user uploads something or is currently livestreaming:
+```
+        New video: ":film_frames: **{0} HAS UPLOADED A NEW VIDEO!** :film_frames:" # Message that appears when a YouTuber has uploaded a new video, user placeholder: {0}
+        Livestream: ":red_circle: **{0} IS LIVESTREAMING NOW!** :red_circle:" # Message that appears when a YouTuber is livestreaming, user placeholder: {0}
+```
+- Make sure that your message is quoted (""). The following parameters can be used:
+     - {0}
+       - Name you specified in the YouTubers configuration
+     - @everyone
+       - Mention @everyone on Discord
+In my example configuration file, I am using emoji's like :clapper: and :red_circle:. You can use all the emoji's with :EmojiName:. Emoji names can be obtained by clicking on the emoji symbol on the right in the Discord textchat, and a mouseover will reveal the plain text that you need to enter.
 
 ### Installation
 Make sure you have Python 3.5 installed.

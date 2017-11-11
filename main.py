@@ -41,16 +41,16 @@ async def update():
                 print('Checking for new videos from {}'.format(threads[item][0]))
                 if processes[item].isNewVideo():
                     print('{} HAS UPLOADED A NEW VIDEO! PUSHING UPDATE ON DISCORD.'.format(threads[item][0]))
-                    newvideo = config.getMessage()[0].format(threads[item][0]) + '\n{}'.format(processes[item].getVideoLink(processes[item].videosData[0][1]))
                     for x in range (0, config.getDiscordChannelNr()):
+                        newvideo = config.getDiscordChannelList()[x]['New video'].format(threads[item][0]) + '\n{}'.format(processes[item].getVideoLink(processes[item].videosData[0][1]))
                         await client.send_message(client.get_channel(str(config.getDiscordChannelList()[x]['channelID'])), newvideo)
 
                 if processes[item].isUserLive():
                     if not processes[item].liveId == threads[item][3]:
                         print('{} IS LIVESTREAMING NOW! PUSHING UPDATE ON DISCORD.'.format(threads[item][0]))
-                        livestream = config.getMessage()[1].format(threads[item][0]) + '\n{}'.format(processes[item].getVideoLink(processes[item].getUserLiveData()))
                         threads[item][3] = processes[item].liveId
                         for x in range (0, config.getDiscordChannelNr()):
+                            livestream = config.getDiscordChannelList()[x]['Livestream'].format(threads[item][0]) + '\n{}'.format(processes[item].getVideoLink(processes[item].getUserLiveData()))
                             await client.send_message(client.get_channel(str(config.getDiscordChannelList()[x]['channelID'])), livestream)
                 item += 1
         except:

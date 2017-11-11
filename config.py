@@ -25,14 +25,6 @@ class Config():
             input('ERROR: Missing Discord bot token in config file!')
             sys.exit()
 
-        if not cfg['config']['Message']['New video']:
-            input('ERROR: Missing new video message in config file!')
-            sys.exit()
-
-        if not cfg['config']['Message']['Livestream']:
-            input('ERROR: Missing livestream message in config file!')
-            sys.exit()
-
         if self.getDiscordChannelNr() == 0:
             input('ERROR: Missing the Discord channel ID in config file!')
             sys.exit()
@@ -43,9 +35,6 @@ class Config():
 
     def getConnectionData(self):
         return [cfg['config']['connection']['Google API key'], cfg['config']['connection']['Discord bot token']]
-
-    def getMessage(self):
-        return [cfg['config']['Message']['New video'], cfg['config']['Message']['Livestream']]
 
     def getPingTime(self):
         return cfg['config']['main']['Ping Every x Minutes']

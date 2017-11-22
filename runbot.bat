@@ -1,38 +1,11 @@
-@ECHO off
-
-CHCP 65001 > NUL
-CD /d "%~dp0"
-
-SETLOCAL ENABLEEXTENSIONS
-SET KEY_NAME="HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced"
-SET VALUE_NAME=HideFileExt
-
-FOR /F "usebackq tokens=1-3" %%A IN (`REG QUERY %KEY_NAME% /v %VALUE_NAME% 2^>nul`) DO (
-    SET ValueName=%%A
-    SET ValueType=%%B
-    SET ValueValue=%%C
+echo off
+cls
+title YouTube bot
+set botdir=%cd%
+for /L %%n in (1,0,10) do (
+echo %botdir%\.. && cls && py -3.5 main.py
+echo.
+echo The application has been stopped, and will restart in 5 seconds.
+echo Press Ctrl+C to interrupt the process.
+ping -n 5 localhost>nul
 )
-
-IF x%ValueValue:0x0=%==x%ValueValue% (
-    ECHO Unhiding file extensions...
-    START CMD /c REG ADD HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced /v HideFileExt /t REG_DWORD /d 0 /f
-)
-ENDLOCAL
-
-
-IF EXIST %SYSTEMROOT%\py.exe (
-    CMD /k py.exe -3.5 main.py
-    EXIT
-)
-
-python --version > NUL 2>&1
-IF %ERRORLEVEL% NEQ 0 GOTO nopython
-
-CMD /k python main.py
-GOTO end
-
-:nopython
-ECHO ERROR: Python has either not been installed or not added to your PATH.
-
-:end
-PAUSE

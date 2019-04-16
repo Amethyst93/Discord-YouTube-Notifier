@@ -11,7 +11,7 @@ class Config():
 
         try:
             with open(fileName, 'r') as ymlfile:
-                cfg = yaml.load(ymlfile)
+                cfg = yaml.safe_load(ymlfile)
         except Exception as e:
             print(e)
             input("Press any key to exit the program")
